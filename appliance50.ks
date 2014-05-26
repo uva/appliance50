@@ -8,13 +8,13 @@ install
 keyboard us
 network --bootproto=dhcp --noipv6
 lang en_US.UTF-8
-repo --cost=1 --name=os --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=fedora-19&arch=i386
-repo --cost=1 --name=fedora-debuginfo --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=fedora-debug-19&arch=i386
-repo --cost=1 --name=updates --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=updates-released-f19&arch=i386
-repo --cost=1 --name=updates-debuginfo --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f19&arch=i386
+repo --cost=1 --name=os --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=fedora-20&arch=i386
+repo --cost=1 --name=fedora-debuginfo --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=fedora-debug-20&arch=i386
+repo --cost=1 --name=updates --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=updates-released-f20&arch=i387
+repo --cost=1 --name=updates-debuginfo --mirrorlist=http://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f20&arch=i386
 rootpw --plaintext crimson
 selinux --permissive
-timezone --utc America/New_York
+timezone --utc Europe/Amsterdam
 xconfig --startxonboot
 
 
@@ -65,7 +65,7 @@ firewall-config
 /usr/bin/passwd -l root
 
 # run install50
-/bin/curl -L --max-redirs 10 http://mirror.cs50.net/appliance50/19/source/latest/install50 | /bin/bash
+/bin/curl -L --max-redirs 10 http://mprog.uvastudent.org/install50 | /bin/bash
 
 ############################################################################
 # clean up

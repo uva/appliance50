@@ -6,7 +6,7 @@
 # "curl -L http://path-to-50/install50 | /bin/bash"
 #
 
-UPDATER=http://mirror.cs50.net/appliance50/19/source/latest/updater
+UPDATER=http://mprog.uvastudent.org/updater
 
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 
